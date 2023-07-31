@@ -8,7 +8,9 @@ public class FourthTask {
         System.out.println("Введите что либо:");
         String str = scanner.nextLine();
 
-        if (str.isEmpty()) System.out.println("Пустые строки вводить нельзя!");
+        if (str.isEmpty()) {
+           throw new RuntimeException("Пустые строки вводить нельзя!");
+        }
         else System.out.println(str);
     }
 }
